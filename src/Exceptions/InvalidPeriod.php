@@ -1,6 +1,6 @@
 <?php
 
-namespace Vormkracht10\Analytics\Exceptions;
+namespace Backstage\Analytics\Exceptions;
 
 use DateTimeInterface;
 use Exception;
