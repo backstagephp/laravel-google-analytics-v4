@@ -2,7 +2,6 @@
 
 namespace Backstage\Analytics;
 
-use Google\Analytics\Data\V1beta\BetaAnalyticsDataClient;
 use Backstage\Analytics\Service\GoogleAnalyticsService;
 use Backstage\Analytics\Traits\Analytics\DemographicAnalytics;
 use Backstage\Analytics\Traits\Analytics\DevicesAnalytics;
@@ -12,6 +11,7 @@ use Backstage\Analytics\Traits\Analytics\SessionsAnalytics;
 use Backstage\Analytics\Traits\Analytics\UsersAnalytics;
 use Backstage\Analytics\Traits\Analytics\ViewsAnalytics;
 use Backstage\Analytics\Traits\ResponseFormatterTrait;
+use Google\Analytics\Data\V1beta\BetaAnalyticsDataClient;
 
 class Analytics
 {

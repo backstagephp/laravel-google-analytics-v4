@@ -2,8 +2,8 @@
 
 namespace Backstage\Analytics\Traits\Google;
 
-use Google\Analytics\Data\V1beta\DateRange;
 use Backstage\Analytics\Period;
+use Google\Analytics\Data\V1beta\DateRange;
 
 trait DateRangeTrait
 {

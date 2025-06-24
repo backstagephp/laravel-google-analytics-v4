@@ -2,9 +2,9 @@
 
 namespace Backstage\Analytics\Traits;
 
+use Backstage\Analytics\AnalyticsResponse;
 use Google\Analytics\Data\V1beta\RunRealtimeReportResponse;
 use Google\Analytics\Data\V1beta\RunReportResponse;
-use Backstage\Analytics\AnalyticsResponse;
 
 trait ResponseFormatterTrait
 {
