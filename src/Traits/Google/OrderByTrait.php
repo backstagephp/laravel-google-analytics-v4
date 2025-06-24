@@ -2,10 +2,10 @@
 
 namespace Backstage\Analytics\Traits\Google;
 
+use Backstage\Analytics\Enums\Direction;
 use Google\Analytics\Data\V1beta\OrderBy;
 use Google\Analytics\Data\V1beta\OrderBy\DimensionOrderBy;
 use Google\Analytics\Data\V1beta\OrderBy\MetricOrderBy;
-use Backstage\Analytics\Enums\Direction;
 
 trait OrderByTrait
 {

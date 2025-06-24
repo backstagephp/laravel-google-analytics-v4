@@ -2,9 +2,9 @@
 
 namespace Backstage\Analytics\Traits\Analytics;
 
-use Illuminate\Support\Arr;
 use Backstage\Analytics\Enums\Direction;
 use Backstage\Analytics\Period;
+use Illuminate\Support\Arr;
 
 trait ViewsAnalytics
 {

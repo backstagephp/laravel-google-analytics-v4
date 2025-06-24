@@ -2,9 +2,9 @@
 
 namespace Backstage\Analytics\Tests;
 
+use Backstage\Analytics\AnalyticsServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Backstage\Analytics\AnalyticsServiceProvider;
 
 class TestCase extends Orchestra
 {

@@ -2,8 +2,8 @@
 
 namespace Backstage\Analytics;
 
-use Illuminate\Support\Carbon;
 use Backstage\Analytics\Exceptions\InvalidPeriod;
+use Illuminate\Support\Carbon;
 
 class Period
 {

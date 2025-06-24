@@ -2,8 +2,8 @@
 
 namespace Backstage\Analytics\Traits\Analytics;
 
-use Illuminate\Support\Arr;
 use Backstage\Analytics\Period;
+use Illuminate\Support\Arr;
 
 trait UsersAnalytics
 {
