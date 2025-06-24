@@ -1,6 +1,6 @@
 <?php
 
-namespace Vormkracht10\Analytics\Enums;
+namespace Backstage\Analytics\Enums;
 
 enum Direction: string
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Vormkracht10\Analytics;
+namespace Backstage\Analytics;
 
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
@@ -20,7 +20,7 @@ class AnalyticsServiceProvider extends PackageServiceProvider
 
         $package->hasInstallCommand(function (InstallCommand $command) {
             $command->publishConfigFile()
-                ->askToStarRepoOnGitHub('vormkracht10/laravel-google-analytics');
+                ->askToStarRepoOnGitHub('backstage/laravel-google-analytics');
         });
     }
 }

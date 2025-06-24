@@ -1,6 +1,6 @@
 <?php
 
-namespace Vormkracht10\Analytics;
+namespace Backstage\Analytics;
 
 use Google\Analytics\Data\V1beta\RunRealtimeReportResponse;
 use Google\Analytics\Data\V1beta\RunReportResponse;

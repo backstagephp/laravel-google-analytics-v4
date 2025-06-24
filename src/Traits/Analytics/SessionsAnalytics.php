@@ -1,9 +1,9 @@
 <?php
 
-namespace Vormkracht10\Analytics\Traits\Analytics;
+namespace Backstage\Analytics\Traits\Analytics;
 
+use Backstage\Analytics\Period;
 use Illuminate\Support\Arr;
-use Vormkracht10\Analytics\Period;
 
 trait SessionsAnalytics
 {

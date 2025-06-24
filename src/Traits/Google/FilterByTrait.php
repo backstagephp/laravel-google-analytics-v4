@@ -1,6 +1,6 @@
 <?php
 
-namespace Vormkracht10\Analytics\Traits\Google;
+namespace Backstage\Analytics\Traits\Google;
 
 use Google\Analytics\Data\V1beta\Filter;
 use Google\Analytics\Data\V1beta\Filter\BetweenFilter;
