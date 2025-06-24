@@ -1,10 +1,10 @@
 <?php
 
-namespace Vormkracht10\Analytics\Tests;
+namespace Backstage\Analytics\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Vormkracht10\Analytics\AnalyticsServiceProvider;
+use Backstage\Analytics\AnalyticsServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Vormkracht10\\Analytics\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Backstage\\Analytics\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 

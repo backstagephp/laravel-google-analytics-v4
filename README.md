@@ -1,11 +1,11 @@
 # Laravel Google Analytics
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/vormkracht10/laravel-google-analytics-v4.svg?style=flat-square)](https://packagist.org/packages/vormkracht10/laravel-google-analytics-v4)
-[![Tests](https://github.com/vormkracht10/laravel-google-analytics-v4/actions/workflows/run-tests.yml/badge.svg?branch=main)](https://github.com/vormkracht10/laravel-google-analytics-v4/actions/workflows/run-tests.yml)
-[![Total Downloads](https://img.shields.io/packagist/dt/vormkracht10/laravel-google-analytics-v4.svg?style=flat-square)](https://packagist.org/packages/vormkracht10/laravel-google-analytics-v4)
-[![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/vormkracht10/laravel-google-analytics-v4)](https://packagist.org/packages/vormkracht10/laravel-google-analytics-v4)
-[![PHPStan](https://github.com/vormkracht10/laravel-google-analytics-v4/actions/workflows/phpstan.yml/badge.svg?branch=main)](https://github.com/vormkracht10/laravel-google-analytics-v4/actions/workflows/phpstan.yml)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/vormkracht10/laravel-google-analytics-v4)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/backstagephp/laravel-google-analytics-v4.svg?style=flat-square)](https://packagist.org/packages/backstagephp/laravel-google-analytics-v4)
+[![Tests](https://github.com/backstagephp/laravel-google-analytics-v4/actions/workflows/run-tests.yml/badge.svg?branch=main)](https://github.com/backstagephp/laravel-google-analytics-v4/actions/workflows/run-tests.yml)
+[![Total Downloads](https://img.shields.io/packagist/dt/backstagephp/laravel-google-analytics-v4.svg?style=flat-square)](https://packagist.org/packages/backstagephp/laravel-google-analytics-v4)
+[![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/backstagephp/laravel-google-analytics-v4)](https://packagist.org/packages/backstagephp/laravel-google-analytics-v4)
+[![PHPStan](https://github.com/backstagephp/laravel-google-analytics-v4/actions/workflows/phpstan.yml/badge.svg?branch=main)](https://github.com/backstagephp/laravel-google-analytics-v4/actions/workflows/phpstan.yml)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/backstagephp/laravel-google-analytics-v4)
 
 ## About Laravel Google Analytics v4
 
@@ -16,7 +16,7 @@ Retrieve all data like pageviews, events, ecommerce transactions and more from G
 You can install the package via composer:
 
 ```bash
-composer require vormkracht10/laravel-google-analytics
+composer require backstage/laravel-google-analytics
 ```
 
 You can publish the config file with:
@@ -61,8 +61,8 @@ After you have created the service account, you need to download the credentials
 After you have done this, you can use the package like this:
 
 ```php
-use Vormkracht10\Analytics\Facades\Analytics;
-use Vormkracht10\Analytics\Period;
+use Backstage\Analytics\Facades\Analytics;
+use Backstage\Analytics\Period;
 
 // Get the average session duration for the last 7 days:
 $averageSessionDuration = Analytics::averageSessionDuration(Period::days(7));
@@ -110,8 +110,8 @@ Methods to retrieve demographic analytics data for your website or application. 
 Here are some examples of how to use the methods:
 
 ```php
-use Vormkracht10\Analytics\Facades\Analytics;
-use Vormkracht10\Analytics\Period;
+use Backstage\Analytics\Facades\Analytics;
+use Backstage\Analytics\Period;
 
 // Get the top users by language for the last 7 weeks, limit to top 10:
 $data = Analytics::topUsersByLanguage(period: Period::weeks(7), limit: 10);
@@ -148,8 +148,8 @@ Methods to retrieve device and operating system analytics data for your website 
 Here are some examples of how to use the methods:
 
 ```php
-use Vormkracht10\Analytics\Facades\Analytics;
-use Vormkracht10\Analytics\Period;
+use Backstage\Analytics\Facades\Analytics;
+use Backstage\Analytics\Period;
 
 // Get the top users by device category for the last 1 year:
 $data = Analytics::topUsersByDeviceCategory(Period::years(1));
@@ -210,8 +210,8 @@ Methods to retrieve pageview analytics data for your website or application. You
 Here are some examples of how to use the methods:
 
 ```php
-use Vormkracht10\Analytics\Facades\Analytics;
-use Vormkracht10\Analytics\Period;
+use Backstage\Analytics\Facades\Analytics;
+use Backstage\Analytics\Period;
 
 // Get the total pageviews for the last 14 days:
 $data = Analytics::totalViews(Period::days(14));
@@ -266,8 +266,8 @@ Methods to retrieve realtime analytics data for your website or application. You
 Here are some examples of how to use the methods:
 
 ```php
-use Vormkracht10\Analytics\Facades\Analytics;
-use Vormkracht10\Analytics\Period;
+use Backstage\Analytics\Facades\Analytics;
+use Backstage\Analytics\Period;
 
 // Get the total active users for the last 30 minutes:
 $data = Analytics::activeUsers();
@@ -280,8 +280,8 @@ Methods to retrieve resource analytics data for your website or application. You
 Here are some examples of how to use the methods:
 
 ```php
-use Vormkracht10\Analytics\Facades\Analytics;
-use Vormkracht10\Analytics\Period;
+use Backstage\Analytics\Facades\Analytics;
+use Backstage\Analytics\Period;
 
 // Get the top 10 referrals for the last 14 days:
 $data = Analytics::getTopReferrers(period: Period::days(14), limit: 10);
@@ -315,8 +315,8 @@ Methods to retrieve session duration analytics data for your website or applicat
 Here are some examples of how to use the methods:
 
 ```php
-use Vormkracht10\Analytics\Facades\Analytics;
-use Vormkracht10\Analytics\Period;
+use Backstage\Analytics\Facades\Analytics;
+use Backstage\Analytics\Period;
 
 // Get total sessions for the last 7 days:
 $data = Analytics::sessions(Period::days(7));
@@ -362,8 +362,8 @@ Methods to retrieve user analytics data for your website or application. You can
 Here are some examples of how to use the methods:
 
 ```php
-use Vormkracht10\Analytics\Facades\Analytics;
-use Vormkracht10\Analytics\Period;
+use Backstage\Analytics\Facades\Analytics;
+use Backstage\Analytics\Period;
 
 // Get the total users for the last 5 weeks:
 $data = Analytics::totalUsers(Period::weeks(5));
@@ -401,7 +401,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
--   [Bas van Dinther](https://github.com/vormkracht10)
+-   [Bas van Dinther](https://github.com/backstagephp)
 -   [All Contributors](../../contributors)
 
 ## License

@@ -1,9 +1,9 @@
 <?php
 
-namespace Vormkracht10\Analytics\Traits\Google;
+namespace Backstage\Analytics\Traits\Google;
 
 use Google\Analytics\Data\V1beta\DateRange;
-use Vormkracht10\Analytics\Period;
+use Backstage\Analytics\Period;
 
 trait DateRangeTrait
 {

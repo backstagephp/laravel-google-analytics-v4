@@ -1,16 +1,16 @@
 <?php
 
-namespace Vormkracht10\Analytics\Service;
+namespace Backstage\Analytics\Service;
 
-use Vormkracht10\Analytics\Traits\Google\DateRangeTrait;
-use Vormkracht10\Analytics\Traits\Google\DimensionTrait;
-use Vormkracht10\Analytics\Traits\Google\FilterByTrait;
-use Vormkracht10\Analytics\Traits\Google\MetricAggregationTrait;
-use Vormkracht10\Analytics\Traits\Google\MetricTrait;
-use Vormkracht10\Analytics\Traits\Google\MinuteRangeTrait;
-use Vormkracht10\Analytics\Traits\Google\OrderByTrait;
-use Vormkracht10\Analytics\Traits\Google\RowConfigTrait;
-use Vormkracht10\Analytics\Traits\ResponseFormatterTrait;
+use Backstage\Analytics\Traits\Google\DateRangeTrait;
+use Backstage\Analytics\Traits\Google\DimensionTrait;
+use Backstage\Analytics\Traits\Google\FilterByTrait;
+use Backstage\Analytics\Traits\Google\MetricAggregationTrait;
+use Backstage\Analytics\Traits\Google\MetricTrait;
+use Backstage\Analytics\Traits\Google\MinuteRangeTrait;
+use Backstage\Analytics\Traits\Google\OrderByTrait;
+use Backstage\Analytics\Traits\Google\RowConfigTrait;
+use Backstage\Analytics\Traits\ResponseFormatterTrait;
 
 class GoogleAnalyticsService
 {

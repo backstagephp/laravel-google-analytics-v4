@@ -1,12 +1,12 @@
 {
-    "name": "vormkracht10/laravel-google-analytics-v4",
+    "name": "backstage/laravel-google-analytics-v4",
     "description": "Laravel package to get insights in Google Analytics v4 data",
     "keywords": [
-        "vormkracht10",
+        "backstage",
         "laravel",
         "laravel-google-analytics-v4"
     ],
-    "homepage": "https://github.com/vormkracht10/laravel-google-analytics-v4",
+    "homepage": "https://github.com/backstagephp/laravel-google-analytics-v4",
     "license": "MIT",
     "authors": [
         {
@@ -36,13 +36,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Vormkracht10\\Analytics\\": "src",
-            "Vormkracht10\\Analytics\\Database\\Factories\\": "database/factories"
+            "Backstage\\Analytics\\": "src",
+            "Backstage\\Analytics\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Vormkracht10\\Analytics\\Tests\\": "tests"
+            "Backstage\\Analytics\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -61,10 +61,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Vormkracht10\\Analytics\\AnalyticsServiceProvider"
+                "Backstage\\Analytics\\AnalyticsServiceProvider"
             ],
             "aliases": {
-                "Analytics": "Vormkracht10\\Analytics\\Facades\\Analytics"
+                "Analytics": "Backstage\\Analytics\\Facades\\Analytics"
             }
         }
     },

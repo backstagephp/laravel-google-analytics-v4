@@ -1,17 +1,17 @@
 <?php
 
-namespace Vormkracht10\Analytics;
+namespace Backstage\Analytics;
 
 use Google\Analytics\Data\V1beta\BetaAnalyticsDataClient;
-use Vormkracht10\Analytics\Service\GoogleAnalyticsService;
-use Vormkracht10\Analytics\Traits\Analytics\DemographicAnalytics;
-use Vormkracht10\Analytics\Traits\Analytics\DevicesAnalytics;
-use Vormkracht10\Analytics\Traits\Analytics\RealtimeAnalytics;
-use Vormkracht10\Analytics\Traits\Analytics\ResourceAnalytics;
-use Vormkracht10\Analytics\Traits\Analytics\SessionsAnalytics;
-use Vormkracht10\Analytics\Traits\Analytics\UsersAnalytics;
-use Vormkracht10\Analytics\Traits\Analytics\ViewsAnalytics;
-use Vormkracht10\Analytics\Traits\ResponseFormatterTrait;
+use Backstage\Analytics\Service\GoogleAnalyticsService;
+use Backstage\Analytics\Traits\Analytics\DemographicAnalytics;
+use Backstage\Analytics\Traits\Analytics\DevicesAnalytics;
+use Backstage\Analytics\Traits\Analytics\RealtimeAnalytics;
+use Backstage\Analytics\Traits\Analytics\ResourceAnalytics;
+use Backstage\Analytics\Traits\Analytics\SessionsAnalytics;
+use Backstage\Analytics\Traits\Analytics\UsersAnalytics;
+use Backstage\Analytics\Traits\Analytics\ViewsAnalytics;
+use Backstage\Analytics\Traits\ResponseFormatterTrait;
 
 class Analytics
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Vormkracht10\Analytics\Traits\Analytics;
+namespace Backstage\Analytics\Traits\Analytics;
 
 use Illuminate\Support\Arr;
-use Vormkracht10\Analytics\Enums\Direction;
-use Vormkracht10\Analytics\Period;
+use Backstage\Analytics\Enums\Direction;
+use Backstage\Analytics\Period;
 
 trait ViewsAnalytics
 {

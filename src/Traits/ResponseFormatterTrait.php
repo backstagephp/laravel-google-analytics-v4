@@ -1,10 +1,10 @@
 <?php
 
-namespace Vormkracht10\Analytics\Traits;
+namespace Backstage\Analytics\Traits;
 
 use Google\Analytics\Data\V1beta\RunRealtimeReportResponse;
 use Google\Analytics\Data\V1beta\RunReportResponse;
-use Vormkracht10\Analytics\AnalyticsResponse;
+use Backstage\Analytics\AnalyticsResponse;
 
 trait ResponseFormatterTrait
 {

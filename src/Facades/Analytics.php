@@ -1,16 +1,16 @@
 <?php
 
-namespace Vormkracht10\Analytics\Facades;
+namespace Backstage\Analytics\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Vormkracht10\Analytics\Analytics
+ * @see \Backstage\Analytics\Analytics
  */
 class Analytics extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \Vormkracht10\Analytics\Analytics::class;
+        return \Backstage\Analytics\Analytics::class;
     }
 }

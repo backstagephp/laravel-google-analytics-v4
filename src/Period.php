@@ -1,9 +1,9 @@
 <?php
 
-namespace Vormkracht10\Analytics;
+namespace Backstage\Analytics;
 
 use Illuminate\Support\Carbon;
-use Vormkracht10\Analytics\Exceptions\InvalidPeriod;
+use Backstage\Analytics\Exceptions\InvalidPeriod;
 
 class Period
 {
