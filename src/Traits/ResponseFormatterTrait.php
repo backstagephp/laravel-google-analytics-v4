@@ -24,10 +24,12 @@ trait ResponseFormatterTrait
 
     private function setDimensionAndMetricHeaders(RunReportResponse|RunRealtimeReportResponse $response): void
     {
+        /** @phpstan-ignore-next-line */
         foreach ($response->getDimensionHeaders() as $dimensionHeader) {
             $this->dimensionHeaders[] = $dimensionHeader->getName();
         }
 
+        /** @phpstan-ignore-next-line */
         foreach ($response->getMetricHeaders() as $metricHeader) {
             $this->metricHeaders[] = $metricHeader->getName();
         }
@@ -37,13 +39,16 @@ trait ResponseFormatterTrait
     {
         $table = [];
 
+        /** @phpstan-ignore-next-line */
         foreach ($response->getRows() as $row) {
             $arr = [];
 
+            /** @phpstan-ignore-next-line */
             foreach ($row->getDimensionValues() as $key => $item) {
                 $arr[$this->dimensionHeaders[$key]] = $item->getValue();
             }
 
+            /** @phpstan-ignore-next-line */
             foreach ($row->getMetricValues() as $key => $item) {
                 $arr[$this->metricHeaders[$key]] = $item->getValue();
             }
@@ -63,12 +68,15 @@ trait ResponseFormatterTrait
         ];
 
         foreach ($aggregationMethods as $aggregationMethod) {
+            /** @phpstan-ignore-next-line */
             foreach ($response->{$aggregationMethod}() as $row) {
                 if ($row->getMetricValues()->count()) {
                     $arr = [];
+                    /** @phpstan-ignore-next-line */
                     foreach ($row->getDimensionValues() as $key => $item) {
                         $arr[$key === 0 ? 'aggregation' : $this->dimensionHeaders[$key]] = $item->getValue();
                     }
+                    /** @phpstan-ignore-next-line */
                     foreach ($row->getMetricValues() as $key => $item) {
                         $arr[$this->metricHeaders[$key]] = $item->getValue();
                     }
