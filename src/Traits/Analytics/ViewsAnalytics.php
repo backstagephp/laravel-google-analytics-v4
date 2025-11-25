@@ -95,7 +95,33 @@ trait ViewsAnalytics
         return $this->getReport($googleAnalytics)
             ->dataTable;
     }
+    
+    /**
+     * @throws \Google\ApiCore\ApiException
+     * @throws \Google\ApiCore\ValidationException
+     */
+    public function getViewsPageByPathUrl(Period $period, string $pagePath): array
+    {
+        try{
+            $googleAnalytics = $this->googleAnalytics
+                ->setDateRange($period)
+                ->addMetrics('screenPageViews')
+                ->addDimensions('pagePath')
+                ->whereDimension('pagePath',4,$pagePath,true);
 
+            return $this->getReport($googleAnalytics)
+                ->dataTable;
+
+        } catch (Throwable $e) {
+
+            Log::channel('google')->info('Erreur API get '. $entityCode);
+            Log::channel('google')->info('Exception: '. $e);
+            report($e);
+            return false;
+
+        }
+    }
+    
     /**
      * @throws \Google\ApiCore\ApiException
      * @throws \Google\ApiCore\ValidationException
