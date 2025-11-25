@@ -56,7 +56,13 @@
         "allow-plugins": {
             "pestphp/pest-plugin": true,
             "phpstan/extension-installer": true
-        }
+        },
+        "audit": {
+            "ignore": [
+                "PKSA-csyb-yc4p-mnbs"
+            ]
+        },
+        "platform-check": false
     },
     "extra": {
         "laravel": {

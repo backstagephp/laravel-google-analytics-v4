@@ -1,9 +1,9 @@
 # Laravel Google Analytics
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/backstagephp/laravel-google-analytics-v4.svg?style=flat-square)](https://packagist.org/packages/backstagephp/laravel-google-analytics-v4)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/backstage/laravel-google-analytics-v4.svg?style=flat-square)](https://packagist.org/packages/backstage/laravel-google-analytics-v4)
 [![Tests](https://github.com/backstagephp/laravel-google-analytics-v4/actions/workflows/run-tests.yml/badge.svg?branch=main)](https://github.com/backstagephp/laravel-google-analytics-v4/actions/workflows/run-tests.yml)
-[![Total Downloads](https://img.shields.io/packagist/dt/backstagephp/laravel-google-analytics-v4.svg?style=flat-square)](https://packagist.org/packages/backstagephp/laravel-google-analytics-v4)
-[![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/backstagephp/laravel-google-analytics-v4)](https://packagist.org/packages/backstagephp/laravel-google-analytics-v4)
+[![Total Downloads](https://img.shields.io/packagist/dt/backstage/laravel-google-analytics-v4.svg?style=flat-square)](https://packagist.org/packages/backstage/laravel-google-analytics-v4)
+[![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/backstage/laravel-google-analytics-v4)](https://packagist.org/packages/backstage/laravel-google-analytics-v4)
 [![PHPStan](https://github.com/backstagephp/laravel-google-analytics-v4/actions/workflows/phpstan.yml/badge.svg?branch=main)](https://github.com/backstagephp/laravel-google-analytics-v4/actions/workflows/phpstan.yml)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/backstagephp/laravel-google-analytics-v4)
 
