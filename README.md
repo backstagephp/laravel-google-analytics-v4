@@ -16,7 +16,7 @@ Retrieve all data like pageviews, events, ecommerce transactions and more from G
 You can install the package via composer:
 
 ```bash
-composer require backstage/laravel-google-analytics
+composer require backstage/laravel-google-analytics-v4
 ```
 
 You can publish the config file with:
